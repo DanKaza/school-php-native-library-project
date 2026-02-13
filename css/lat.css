@@ -1,0 +1,29 @@
+.form_login{
+    /*membuat lebar form penuh*/
+    box-sizing : border-box;
+    width: 40%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 10px;
+    font-family: times new roman;
+    border-radius: 30px;
+}
+/* Gaya untuk kolom isian */
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    width: 40%; /* Lebar kolom */
+    padding: 10px; /* Padding dalam kolom */
+    border: 2px solid #ccc; /* Warna dan ketebalan border */
+    border-radius: 30px; /* Membuat kolom isian menjadi oval */
+    font-size: 16px; /* Ukuran font */
+    box-sizing: border-box; /* Untuk memastikan padding tidak mempengaruhi ukuran */
+}
+
+.tombol_login{
+    background: #2aa7e2;
+    color: white;
+    font-size: 11pt;
+    width: 40%;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+}

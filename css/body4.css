@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    padding: 1em;
+    text-align: center;
+    background: linear-gradient(90deg, #7c3aed, #06b6d4);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    text-shadow: 30px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    column-gap: 20px; 
+}
+
+section {
+    flex: 1 1 60%;
+    padding: 40px;
+    background: linear-gradient(90deg, #eceaef, #8d9091);
+    color: #313032;
+    height: auto;
+    border-radius: 20px;
+    
+}
+
+aside {
+    flex: 1 1 30%;
+    padding: 40px;
+    background: #e7eded;
+    background: linear-gradient(90deg, #f2f0f4, #8d9091);
+    color: rgb(67, 31, 165);
+    height: auto;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background: linear-gradient(90deg, #7c3aed, #06b6d4);
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section, aside {
+        flex: 1 1 100%;
+    }
+}
+
+a{
+    text-decoration:none;
+}
+
+.kotak_login{
+    width: 400px;
+    background: white;
+    /*meletakkan form ke tengah*/
+    margin: 80px auto;
+    padding: 30px 20px;
+    box-shadow: 0px 0px 100px 5px #d6d6d6;
+    border-radius: 20px;
+
+}
+
+label{
+    font-size: 11pt;
+}
+
+.form_login{
+    /*membuat lebar form penuh*/
+    box-sizing : border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 10px;
+    font-family: times new roman;
+    border-radius: 5px;
+}
+
+.tombol_login{
+    background: #7295a5;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+/* Gaya untuk kolom isian */
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    width: 100%; /* Lebar kolom */
+    padding: 10px; /* Padding dalam kolom */
+    border: 2px solid #ccc; /* Warna dan ketebalan border */
+    border-radius: 10px; /* Membuat kolom isian menjadi oval */
+    font-size: 16px; /* Ukuran font */
+    box-sizing: border-box; /* Untuk memastikan padding tidak mempengaruhi ukuran */
+}
